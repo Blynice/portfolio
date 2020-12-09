@@ -1,0 +1,318 @@
+body{
+    background-color: #2e2e2e;
+   /* background-color:#b66969;*/
+    color: aliceblue;
+    font-family: 'Lato', sans-serif;
+}
+
+
+.center{
+  text-align: center;
+}
+h1{
+    font-weight: bold;
+    font-size: 80px;
+} 
+h1:hover{
+  animation: rubberBand;
+  animation-duration: 1.5s;
+}
+h1,
+h2,
+h3{
+    font-family: 'Roboto', sans-serif;
+}
+#contact,
+#projets{
+  text-align: center;
+  margin-top: 10px;
+  padding:40px;
+}
+
+.letter{
+  font-family: 'Monoton', cursive;
+}
+
+header {
+  padding: 156px 0 50px;
+}
+
+section {
+  padding: 150px 0;
+}
+.bg-primary{
+  background-color: #2e2e2e!important;
+}
+
+/******************* Navbar ***************/
+.navbar-collapse{
+    justify-content: flex-end;
+}
+.bg-dark{
+    background-color: #1d1d1d!important;
+}
+span.navbar-toggler-icon{
+  color:aliceblue;
+}
+a.nav-link{
+    color: aliceblue!important;
+    font-size: 20px;
+}
+a{
+  color:aliceblue;
+}
+a:hover{
+  text-decoration: none;
+}
+
+a.nav-link:hover{
+    color:#C317E8!important;
+    animation: pulse;
+    animation-duration: 1.5s;
+}
+
+a.nav-link:active{
+    color:#a9dd18;
+}
+
+li.nav-item{
+    width: 200px;
+    margin-right: 5px;
+}
+
+/**************** Logo ***************/
+.logo {
+  font-family: 'Monoton', cursive;
+  font-size: 70px;
+}
+.logo-purple{
+  color: #C317E8;
+}
+
+/****************** Button ***************/
+.btn-outline-primary{
+    color:#f4f1f5;
+    border-color: #f4f1f5;
+}
+.btn-outline-primary:not(:disabled):not(.disabled):active{
+  background-color: #ffd319;
+  color:#f4f1f5;
+  border-color: #ffd319;
+}
+
+.btn-outline-primary:focus{
+  background-color: #2e2e2e;
+  border-color: #C317E8;
+  color: #C317E8!important;
+  transform: scale(1.1);
+}
+
+.btn-outline-primary.focus, .btn-outline-primary:focus {
+  box-shadow: none;
+}
+.btn-outline-primary:not(:disabled):not(.disabled).active:focus,
+ .btn-outline-primary:not(:disabled):not(.disabled):active:focus,
+  .show>.btn-outline-primary.dropdown-toggle:focus {
+    box-shadow: none;
+    color:#f222ff;
+}
+
+.btn-outline-primary:hover{
+    background-color: #2e2e2e;
+    border-color: #C317E8;
+    color: #C317E8!important;
+    transform: scale(1.1);
+}
+
+
+.btn-outline-secondary{
+    border-color: #C317E8;
+    color: #C317E8;
+}
+
+.btn-outline-secondary:not(:disabled):not(.disabled):active{
+  background-color: #ffd319;
+}
+
+.btn-outline-secondary:focus{
+  background-color: #ffd319;
+  box-shadow: none;
+  
+}
+
+.btn-outline-secondary:not(:disabled):not(.disabled).active:focus,
+ .btn-outline-secondary:not(:disabled):not(.disabled):active:focus,
+  .show>.btn-outline-secondary.dropdown-toggle:focus {
+    box-shadow: none;
+    color:#f222ff;
+}
+
+.btn-outline-secondary:hover{
+    background-color: #C317E8;
+    color:#f4f1f5;
+    border-color: #f4f1f5;
+}
+#about{
+    margin: 10px;
+    padding: 20px;
+}
+
+/************ Card *************/
+.card{
+  border: none;
+}
+.card-body{
+    color: #0e0c0c;
+}
+.link-card{
+  color: #C317E8;
+}
+a.link-card:hover{
+  text-decoration: underline;
+  color: #C317E8;
+}
+/************** Form ***************/
+form{
+    text-align: center;
+    width: 560px;
+    color:aliceblue;
+}
+.form-control:focus{
+  color:#C317E8;
+  border-color:#C317E8;
+  box-shadow: 0 0 0 0.2rem #C317E8;
+}
+
+input{
+    margin: 10px 0;
+}
+button{
+    margin: 10px;
+}
+.error{
+  color: #D8000C;
+
+}
+
+/************** Icons ****************/
+.icons-section{
+  text-align: center;
+  padding: 0;
+}
+.social-icon {
+  padding: 10px;
+}
+
+.social-icon li {
+  display: inline-block;
+  list-style: none;
+}
+
+.social-icon li a {
+  color: #f4f1f5;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  margin: 22px 12px 10px 12px;
+}
+
+i.zmdi:hover {
+  color: #C317E8;
+  transform: scale(1.1);
+}
+/********************* Footer *************************/
+ /***************************************************/
+footer{
+  padding: 25px;
+  margin: 20px 0;
+  text-align: center;
+  background-color: #2e2e2e;
+}
+
+
+/*:root{
+    background-color:#b66969;
+  }*/
+
+/************************Media Queries ************************/
+  /***********************************************************/
+  @media screen and (max-width: 780px){
+   body{
+     display: flex;
+     flex-wrap: wrap;
+   }
+   footer{
+     padding: 0;
+     margin: 25px 50px;
+   }
+
+   .bg-dark{
+    background-color: #2e2e2e!important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .logo{
+    margin: 0 78px;
+    width: 20%;
+  }
+
+  header{
+    padding-bottom: 0;
+  }
+  .display-4 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+a.nav-link{
+  text-align: center;
+}
+li.nav-item {
+  width: 310px; 
+  margin-right: 0; 
+}
+.btn-outline-primary{
+  margin-top: 10px;
+}
+#services,
+#contact{
+  padding: 0;
+}
+form{
+  max-width: 300px;
+}
+
+footer{
+  margin: 0;
+}
+  }
+
+
+
+  /**** <?php 
+  if(isset($_POST['mail'])){
+    $to = "celinebrechet@hotmail.fr";
+    $from= $_POST['mail'];
+    $message= $_POST['message'];
+    $firstname= $_POST['firstname'];
+    $name= $_POST['name'];
+    
+    mail($to,$from,$firstname,$name,$message);
+    ?>
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+  Message envoyé !
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+    <?php }?>
+****/
